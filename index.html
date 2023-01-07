@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+
+<body>
+  
+    <div id="container">
+        <div class="cont_nav">
+            <input type="text" style="display: none;" id="searchBar" placeholder="search here">
+            <i class="fa-solid fa-maginfying-glass" id="search"></i>
+            
+            <button id="btn11" class="top">▶ Play Songs</button> .
+            <button id="btn22" class="top">+ Follow</button>
+            
+            
+        
+        </div>
+    
+            
+            
+        
+        <audio id="music" src="http://listen.vo.llnwd.net/g3/prvw/9/5/1/1/7/2489571159.mp3"></audio>
+        
+
+    </div>
+  
+    <div id="queueContainer">
+        
+        
+    </div>
+
+    <div id="playlistDiv">
+
+    </div>
+      <div id="songBottom">
+        <div id="seekBar">
+            <input type="range" min="0" max="100" value="0" id="rangeBar">
+        </div>
+        <div id="masterSongBar">
+            <div class="songInfo">
+                <p id="masterSongName">Line Without a Hook</p>
+            </div>
+            <div class="mid_btn">
+                <i class="fa-solid fa-shuffle" id="shuffle"></i>
+                <i class="fa-solid fa-backward-fast" id="backward"></i>
+                <i class="fa-solid fa-backward-step" id="previous"></i>
+                <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+                <i class="fa-solid fa-forward-step" id="next"></i>
+                <i class='fa-solid fa-arrows-rotate'></i>
+                
+                <i class="fa-solid fa-forward-fast" id="forward"></i>
+              </div>
+            
+            <div class="rightbtn">
+                <span id="timeStamp">00:02/03:25</span>
+                <button class="addtoqueue" onclick="addToQueue()">Auto</button>
+                <i class='fa-solid fa-volume-high' id="volumeup"></i>
+                <i class='fa-solid fa-list-check' id="Queue"></i>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/727a45e0f0.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

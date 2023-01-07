@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url(./pexels-jessica-lewis-creative-583843.jpg);
+    background-size: cover;
+    color: #ffffff;
+    max-height: 50%;
+}
+#btn1{
+    
+    
+    border-radius: 100px;
+    font-size: medium;
+    font-weight: 10mm;
+    background-color:red;
+    color: white;
+    
+ 
+}
+#btn11{
+      
+    height: 40px;
+    width: 9vw;
+    border-radius: 100px;
+    font-size: medium;
+    font-weight: 10mm;
+    background-color:red;
+    color: white;
+    
+
+}
+
+
+#btn22{
+    height: 40px;
+    width: 9vw;
+    border-radius: 100px;
+   
+    font-weight: 3px;
+    font-size: medium;
+    background-color:transparent;
+    border-color:white;
+    
+    color: white;
+    margin-left: -78rem;
+}
+.cont_nav{
+    margin-top: 45px;
+    display: flex;
+   flex-wrap:var(--gap);
+  --gap: -79rem;
+  margin-left: var(--gap);
+  
+   justify-content:space-between
+}
+
+.cont_nav{
+    
+    
+}
+
+
+#btn2{
+
+    height: 40px;
+    width: 9vw;
+    border-radius: 100px;
+    font-weight: 3px;
+    font-size: medium;
+    background-color:transparent;
+    border-color:white;
+    color: white;
+}
+#masterPlay{
+    color: red;
+}
+
+#btn11:hover{
+    background-color:dark red;
+    box-shadow: 2px 2px rosybrown;
+    color: bisque;
+    font-size: 1.1rem;
+     cursor: pointer;
+
+}
+
+#btn22:hover{
+    background-color:red;
+    box-shadow: 2px 2px 2px rgb(240, 7, 7);
+    border-color: black;
+    color: black;
+    font-size: 1.1rem;
+     cursor: pointer;
+
+}
+
+.songList:hover{
+    background-color:darkgrey;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    color: #2218cf;
+}
+
+
+nav img {
+    height: 40px;
+    margin: 0 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.top{
+    display:inline-block;
+    margin-top: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+nav ul li:hover {
+    color: #00A8FF;
+}
+
+#container {
+    display: flex;
+    align-content: flex-start;
+    flex-direction:column;
+    background: black;
+    width: 70%;
+    min-width: 30%;
+    color: white;
+    position: relative;
+    margin-top: 50px ;
+    height: 70;
+    margin-top: 0px;
+    margin-bottom: 2vh
+    
+    
+}
+
+#container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#container::-moz-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#container {
+    -ms-overflow-style: none;
+}
+
+#queueContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content:end;
+    align-items: flex-end;
+    background: black;
+    width: 30%;
+    min-width: 30%;
+    color: white;
+    margin-left:  50px 50px;
+    border-radius: 20px;
+    height: 70vh;
+    overflow-y: scroll;
+}
+#volumeup{
+    align-items: flex-end;
+}
+
+#queueContainer::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#queueContainer::-moz-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#queueContainer {
+    -ms-overflow-style: none;
+}
+
+
+#queueContainer {
+    display: none;
+}
+
+#queueContainer.show {
+    display: block;
+}
+
+#container.hide {
+    display: none;
+}
+
+.songList {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.coverImg {
+    width: 35px;
+    height: 35px;
+}
+
+.songList p {
+    margin-left: 15px;
+}
+
+#songBottom {
+    background-color: black;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#seekBar {
+    display: flex;
+    justify-content: center;
+}
+
+#rangeBar {
+    width: 98%;
+    height: 2px;
+    cursor: pointer;
+}
+
+#masterSongBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid_btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.mid_btn i {
+    padding: 0 5px;
+    cursor: pointer;
+    margin: 0 4px;
+
+}
+
+
+.queue {
+    background-color: white;
+}
+
+#id {
+    background-color: white;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 5px 0;
+}
+
+.masterSongName {
+    margin: 0 10px;
+}
+
+.songName {
+    cursor: pointer;
+}
+
+#Queue {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+#Queue:hover {
+    background-color: lightpink;
+    cursor: pointer;
+    
+}
+
+.addtoqueue {
+    margin-left: 25px;
+    width: 70px;
+    box-shadow: 0 2px 4px red;
+    background: transparent;
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
+
+.queuedSong {
+    cursor: pointer;
+}
+
+.cont_nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: #ffffff;
+    
+}
+
+
+#search-results {
+    -ms-overflow-style: none;
+}
+
+.playlistAdd {
+    cursor: pointer;
+    width: 30px;
+    margin: 0 10px;
+}
+
+.rightbtn {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+#playlistDiv {
+    width: 25em;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 5em;
+    z-index: 1;
+    height: 30em;
+    right: 44px;
+    border-radius: 12px;
+    display: none;
+    cursor: pointer;
+}
